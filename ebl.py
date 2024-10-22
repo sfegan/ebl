@@ -321,7 +321,7 @@ def read_francescini_density(filename):
             got_header = True
         else:
             for i in range(len(bits)):
-                j = i/2
+                j = i//2
                 if i%2==0: x[j].append(float(bits[i]))
                 else: y[j].append(float(bits[i]))
     ednde = []
